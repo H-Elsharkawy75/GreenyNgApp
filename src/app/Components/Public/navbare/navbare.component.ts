@@ -51,6 +51,7 @@ GetCategoryHomeData(){
 
   Logout(){
     this._AuthSer.userlogout();
+
   }
 
 }

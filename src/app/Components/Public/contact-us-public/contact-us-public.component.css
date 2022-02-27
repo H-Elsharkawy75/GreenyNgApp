@@ -1,0 +1,439 @@
+.contact-card {
+  text-align: center;
+  border-radius: 8px;
+  margin: 0px 2.5px 30px;
+  padding: 60px 15px 55px;
+  background: var(--white);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.contact-card:hover {
+  background: var(--primary)
+}
+
+.contact-card:hover i {
+  color: var(--primary);
+  background: var(--white)
+}
+
+.contact-card:hover h4,
+.contact-card:hover p,
+.contact-card:hover a {
+  color: var(--white)
+}
+
+.contact-card i {
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+  color: var(--white);
+  background: var(--primary);
+  text-shadow: var(--primary-tshadow);
+  -webkit-box-shadow: var(--primary-bshadow);
+  box-shadow: var(--primary-bshadow);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.contact-card h4 {
+  margin-bottom: 18px;
+  text-transform: capitalize;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.contact-card p {
+  width: auto;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 auto;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.contact-card p a {
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  color: var(--text);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.contact-card.active {
+  background: var(--primary)
+}
+
+.contact-card.active i {
+  color: var(--primary);
+  background: var(--white)
+}
+
+.contact-card.active h4,
+.contact-card.active p,
+.contact-card.active a {
+  color: #fff
+}
+
+.branch-card {
+  margin: 0px 2.5px 30px;
+  position: relative
+}
+
+.branch-card:hover::before {
+  background: rgba(17, 151, 68, 0.85)
+}
+
+.branch-card:hover .branch-overlay {
+  top: 50%
+}
+
+.branch-card:hover .branch-overlay p {
+  opacity: 1
+}
+
+.branch-card::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.45);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.branch-card img {
+  width: 100%;
+  border-radius: 8px
+}
+
+.branch-overlay {
+  position: absolute;
+  top: 60%;
+  left: 0px;
+  width: 100%;
+  padding: 0px 15px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.branch-overlay h3 {
+  color: var(--white);
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  text-shadow: var(--primary-tshadow)
+}
+
+.branch-overlay p {
+  width: 200px;
+  margin: 0 auto;
+  letter-spacing: 0.3px;
+  color: var(--white);
+  opacity: 0;
+  text-transform: capitalize;
+  text-shadow: var(--primary-tshadow);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.team-media {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px
+}
+
+.team-media:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05)
+}
+
+.team-media:hover .team-overlay {
+  top: 0px;
+  opacity: 1
+}
+
+.team-media:hover .team-overlay a {
+  padding-top: 0px
+}
+
+.team-media img {
+  width: 100%;
+  border-radius: 8px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.team-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.team-overlay a {
+  width: 36px;
+  height: 36px;
+  font-size: 15px;
+  line-height: 36px;
+  margin: 0px 5px;
+  padding-top: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--text);
+  background: var(--white);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.team-meta {
+  text-align: center
+}
+
+.team-meta h5 {
+  text-transform: capitalize
+}
+
+.team-meta h5 a {
+  color: var(--heading);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.team-meta h5 a:hover {
+  color: var(--primary)
+}
+
+.team-meta p {
+  font-size: 15px;
+  text-transform: capitalize
+}
+
+@media (max-width: 575px) {
+  .team-card {
+      width: 290px;
+      margin: 0px auto 50px
+  }
+}
+
+
+
+.contact-form {
+  border-radius: 8px;
+  padding: 30px 30px;
+  margin: 0px 2.5px 30px;
+  background: var(--white)
+}
+
+.contact-form h4 {
+  margin-bottom: 25px
+}
+
+.contact-map {
+  padding: 30px;
+  margin: 0px 2.5px 30px;
+  border-radius: 8px;
+  background: var(--white);
+  display: block;
+  height: calc(100% - 30px);
+}
+
+.contact-map iframe {
+  width: 100%;
+  border: none;
+  height: 100%
+}
+
+.contact-social {
+  text-align: center;
+  margin-top: 20px
+}
+
+.contact-social h4 {
+  margin-bottom: 20px
+}
+
+@media (max-width: 575px) {
+  .contact-form,
+  .contact-map {
+      padding: 15px
+  }
+}
+
+@media (min-width: 401px) and (max-width: 575px) {
+  .contact-part .container {
+      max-width: 400px
+  }
+}
+
+.contact-card.active p a{
+  color: #fff;;
+}
+ .contact-card:hover p a {
+  color: #fff;
+}
+
+.form-input-group {
+  position: relative
+}
+
+.form-input-group:focus-within i {
+  color: var(--primary)
+}
+
+.form-input-group input {
+  padding: 0px 20px 2px 45px
+}
+
+.form-input-group textarea {
+  padding: 12px 20px 12px 45px
+}
+
+.form-input-group i {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center
+}
+.form-control {
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  padding: 0px 20px 2px;
+  color: var(--text);
+  background: var(--chalk);
+  border: 1px solid var(--border)
+}
+
+.form-control:focus-within {
+  background: var(--chalk);
+  border-color: var(--primary);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0
+}
+
+.form-control[type=file]::-webkit-file-upload-button,
+.form-control[type=file]::file-selector-button {
+  border: none;
+  background: none;
+  height: 45px;
+  line-height: 45px;
+  padding: 5px 15px 0px;
+  color: var(--gray)
+}
+
+.form-control[type=file]::-webkit-file-upload-button:hover,
+.form-control[type=file]::file-selector-button:hover {
+  background-color: transparent
+}
+
+.form-control[type=file]::-webkit-file-upload-button:focus,
+.form-control[type=file]::file-selector-button:focus {
+  border: none;
+  outline: none
+}
+.form-group textarea {
+  height: 150px;
+  padding: 12px 20px
+}
+
+.form-label {
+  font-weight: 500;
+  margin: 0px 0px 7px 3px;
+  white-space: nowrap;
+  text-transform: capitalize
+}
+.form-btn-group {
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 45px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--primary)
+}
+
+.form-btn-group i {
+  font-size: 15px;
+  margin-right: 5px;
+  display: inline-block
+}
+.form-input-group textarea {
+  padding: 12px 20px 12px 45px;
+}
+.disabledFormContact{
+  opacity: .5;
+}

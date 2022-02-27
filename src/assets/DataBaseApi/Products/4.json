@@ -1,0 +1,25 @@
+{
+  "ProductId": 4,
+  "sales": false,
+  "New": false,
+  "Rate": 2,
+  "price": {
+    "old": 34,
+    "new": 28
+  },
+  "mainimg": "/assets/images/product/04.jpg",
+  "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8/6666666666666",
+  "name": "Product 4",
+  "discription": "dasdasdas",
+  "imgGallary": [
+    { "ImgUrl": "/assets/images/product/04.jpg"},
+    { "ImgUrl": "/assets/images/product/05.jpg"},
+    { "ImgUrl": "/assets/images/product/06.jpg"},
+    { "ImgUrl": "/assets/images/product/07.jpg"}
+  ],
+  "tags": [
+    {"TageName":"organic"},
+    {"TageName":"vegetable"},
+    {"TageName":"chilis"}
+  ]
+}

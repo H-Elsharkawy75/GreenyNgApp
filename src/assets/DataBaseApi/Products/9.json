@@ -1,0 +1,25 @@
+{
+  "ProductId": 9,
+  "sales": true,
+  "New": true,
+  "Rate": 2,
+  "price": {
+    "old": 35,
+    "new": 25
+  },
+  "mainimg": "/assets/images/product/09.jpg",
+  "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+  "name": "celery",
+  "discription": "dasdasdas",
+  "imgGallary": [
+    { "ImgUrl": "/assets/images/product/09.jpg"},
+    { "ImgUrl": "/assets/images/product/06.jpg"},
+    { "ImgUrl": "/assets/images/product/07.jpg"},
+    { "ImgUrl": "/assets/images/product/08.jpg"}
+  ],
+  "tags": [
+    {"TageName":"organic"},
+    {"TageName":"vegetable"},
+    {"TageName":"chilis"}
+  ]
+}

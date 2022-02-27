@@ -1,0 +1,23 @@
+{
+  "ProductId": 1,
+  "sales": true,
+  "New": true,
+  "Rate": 4,
+  "price": {
+    "old": 34,
+    "new": 28
+  },
+  "mainimg": "/assets/images/product/01.jpg",
+  "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8/6666666666666",
+  "name": "Product 1",
+  "discription": "dasdasdas",
+  "imgGallary": [
+    { "ImgUrl": "/assets/images/product/01.jpg"},
+    { "ImgUrl": "/assets/images/product/02.jpg"},
+    { "ImgUrl": "/assets/images/product/03.jpg"},
+    { "ImgUrl": "/assets/images/product/04.jpg"}
+  ],
+  "tags": [
+    {"TageName":"organic"}
+  ]
+}

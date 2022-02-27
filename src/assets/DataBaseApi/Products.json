@@ -1,0 +1,330 @@
+[
+  {
+    "ProductId": 1,
+    "CategoryID":1,
+    "BrandID":0,
+    "sales": true,
+    "quantity": 1,
+    "New": true,
+    "Rate": 4,
+    "price": {
+
+      "new": 15,
+      "old": 24
+    },
+    "mainimg": "/assets/images/product/01.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8/6666666666666",
+    "name": "Green Paper"
+  },
+  {
+    "ProductId": 2,
+    "CategoryID":2,
+    "BrandID":1,
+    "sales": true,
+    "quantity": 1,
+    "New": false,
+    "Rate": 3,
+    "price": {
+
+      "new": 28,
+      "old": 34
+    },
+    "mainimg": "/assets/images/product/02.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8/55555555",
+    "name": "Carrot"
+  },
+  {
+    "ProductId": 3,
+    "CategoryID":3,
+    "BrandID":2,
+    "sales": false,
+    "quantity": 1,
+    "New": false,
+    "Rate": 3,
+    "price": {
+
+      "new": 22,
+      "old": 32
+    },
+    "mainimg": "/assets/images/product/03.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "cucumber"
+  },
+  {
+    "ProductId": 4,
+    "CategoryID":4,
+    "BrandID":3,
+    "sales": false,
+    "quantity": 1,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/04.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "eggplant"
+  },
+  {
+    "ProductId": 5,
+    "CategoryID":5,
+    "BrandID":4,
+    "sales": false,
+    "quantity": 1,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/05.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "Okra"
+  },
+  {
+    "ProductId": 6,
+    "CategoryID":6,
+    "BrandID":5,
+    "sales": false,
+    "quantity": 1,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/06.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "Tomato"
+  },
+  {
+    "ProductId": 7,
+    "CategoryID":7,
+    "BrandID":0,
+    "sales": false,
+    "quantity": 1,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/07.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "onion"
+  },
+  {
+    "ProductId": 8,
+    "CategoryID":8,
+    "BrandID":1,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/08.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "cabbage"
+  },
+  {
+    "ProductId": 9,
+    "CategoryID":1,
+    "BrandID":2,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/09.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "celery"
+  },
+  {
+    "ProductId": 10,
+    "CategoryID":2,
+    "BrandID":3,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/10.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "Red Paper"
+  },
+  {
+    "ProductId": 11,
+    "CategoryID":3,
+    "BrandID":4,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/11.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "beans"
+  },
+  {
+    "ProductId": 12,
+    "CategoryID":4,
+    "BrandID":5,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/12.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "Pumpkin"
+  },
+  {
+    "ProductId": 13,
+    "CategoryID":5,
+    "BrandID":0,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/13.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "Strawberry"
+  },
+  {
+    "ProductId": 14,
+    "CategoryID":6,
+    "BrandID":1,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/14.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "peach"
+  },
+  {
+    "ProductId": 15,
+    "CategoryID":7,
+    "BrandID":2,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/15.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "hazelnut"
+  },
+  {
+    "ProductId": 16,
+    "CategoryID":8,
+    "BrandID":3,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/16.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "Orenage"
+  }
+  ,
+  {
+    "ProductId": 17,
+    "CategoryID":1,
+    "BrandID":3,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/17.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "Grape"
+  },
+  {
+    "ProductId": 18,
+    "CategoryID":2,
+    "BrandID":4,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/18.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "banana"
+  },
+  {
+    "ProductId": 19,
+    "CategoryID":3,
+    "BrandID":5,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/19.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "Pineapple"
+  },
+  {
+    "ProductId": 20,
+    "CategoryID":4,
+    "BrandID":0,
+    "sales": false,
+    "New": false,
+    "Rate": 2,
+    "price": {
+
+      "new": 25,
+      "old": 35
+    },
+    "mainimg": "/assets/images/product/20.jpg",
+    "YoutubeLink": "https://www.youtube.com/embed/9xzcVxSBbG8",
+    "name": "plum"
+  }
+]

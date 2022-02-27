@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "free 1 home delivery within 24 hours now.",
+    "discription": "Lorem ipsum dolor consectetur adipisicing elit modi consequatur eaque expedita porro necessitatibus eveniet voluptatum quis pariatur Laboriosam molestiae architecto excepturi",
+    "img": "/assets/images/home/index/01.png"
+  },
+  {
+    "id": 2,
+    "title": "free 2 home delivery within 24 hours now.",
+    "discription": "Lorem ipsum dolor consectetur adipisicing elit modi consequatur eaque expedita porro necessitatibus eveniet voluptatum quis pariatur Laboriosam molestiae architecto excepturi",
+    "img": "/assets/images/home/index/02.png"
+  },
+  {
+    "id": 3,
+    "title": "free 3 home delivery within 24 hours now.",
+    "discription": "Lorem ipsum dolor consectetur adipisicing elit modi consequatur eaque expedita porro necessitatibus eveniet voluptatum quis pariatur Laboriosam molestiae architecto excepturi",
+    "img": "/assets/images/home/index/02.png"
+  },
+  {
+    "id": 4,
+    "title": "free 4 home delivery within 24 hours now.",
+    "discription": "Lorem ipsum dolor consectetur adipisicing elit modi consequatur eaque expedita porro necessitatibus eveniet voluptatum quis pariatur Laboriosam molestiae architecto excepturi",
+    "img": "/assets/images/home/index/02.png"
+  }
+
+]

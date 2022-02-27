@@ -1,0 +1,39 @@
+[
+  {
+    "BrandID": 0,
+    "BrandName": "Econature",
+    "BrandImg": "../../../../../assets/images/brand/06.jpg",
+    "BrandItem": 45
+  },
+  {
+    "BrandID": 1,
+    "BrandName": "natural greeny",
+    "BrandImg": "../../../../../assets/images/brand/01.jpg",
+    "BrandItem": 45
+  },
+  {
+    "BrandID": 2,
+    "BrandName": "Vegan Lover",
+    "BrandImg": "../../../../../assets/images/brand/02.jpg",
+    "BrandItem": 45
+  },
+  {
+    "BrandID": 3,
+    "BrandName": "Organic Foody",
+    "BrandImg": "../../../../../assets/images/brand/03.jpg",
+    "BrandItem": 45
+  },
+  {
+    "BrandID": 4,
+    "BrandName": "Ecomart Limited",
+    "BrandImg": "../../../../../assets/images/brand/04.jpg",
+    "BrandItem": 45
+  },
+  {
+    "BrandID": 5,
+    "BrandName": "Fresh Fortune",
+    "BrandImg": "../../../../../assets/images/brand/05.jpg",
+    "BrandItem": 45
+  }
+
+]

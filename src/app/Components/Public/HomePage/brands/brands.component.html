@@ -1,0 +1,51 @@
+
+
+
+
+<section class="section brand-part BrandsItem">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="section-heading">
+                  <h2>shop by brands</h2>
+              </div>
+          </div>
+      </div>
+      <div class="brand-slider slider-arrow">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide *ngFor="let brand of Brands; let i =index" >
+            <div class="brand-wrap">
+              <div class="brand-media">
+                <img [src]="brand.BrandImg" alt="brand">
+                <div class="brand-overlay">
+                  <a [routerLink]="['/Brands', brand.BrandID ]">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="brand-meta">
+                  <h4>{{brand.BrandName}}</h4>
+                  <p>({{brand.BrandItem}} items)</p>
+              </div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+
+      </div>
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="section-btn-50"><a routerLink="Brands" class="btn btn-outline"><i class="fas fa-eye"></i><span>view all brands</span></a></div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+
+
+<div class="product-view">
+
+  <!-- {{DetailsProduct | json}} -->
+
+
+    <div class="row">
+      <div class="col-md-5 col-lg-5">
+          <div class="view-gallery">
+              <div class="view-label-group">
+                <label class="view-label new" *ngIf="DetailsProduct?.New">new</label>
+                <label class="view-label off" *ngIf="DetailsProduct?.sales">-10%</label></div>
+              <div class="Siwewewe">
+                <swiper  [spaceBetween]="0"
+                  [navigation]="true" [thumbs]="{ swiper: thumbsSwiper }" class="mySwiper2">
+                  <ng-template swiperSlide *ngFor="let ImgProd of DetailsProduct?.imgGallary">
+                    <div class="ImgItemMain">
+                      <img [src]="ImgProd?.ImgUrl" />
+                    </div>
+                  </ng-template>
+
+                </swiper>
+                <swiper (swiper)="thumbsSwiper = $event" [spaceBetween]="10" [slidesPerView]="5" [freeMode]="true"
+                  [watchSlidesProgress]="true" class="mySwiper ChildImg">
+                  <ng-template swiperSlide *ngFor="let ImgProd of DetailsProduct?.imgGallary">
+                    <img [src]="ImgProd?.ImgUrl" />
+                  </ng-template>
+
+                </swiper>
+
+              </div>
+          </div>
+      </div>
+      <div class="col-md-7 col-lg-7">
+          <div class="view-details">
+              <h3 class="view-name"><a href="product-video.html"> {{DetailsProduct?.name}} </a></h3>
+
+              <div class="view-rating">
+                <ng-template #ratess let-fill="fill">
+                  <span class="star icofont-star" [class.full]="fill === 100"></span>
+                </ng-template>
+                <ngb-rating [rate]="DetailsProduct?.Rate" [starTemplate]="ratess" [readonly]="true" [max]="5"></ngb-rating>
+
+                <!-- <i class="active icofont-star"></i>
+                <i class="active icofont-star"></i>
+                <i class="active icofont-star"></i>
+                <i class="active icofont-star"></i>
+                <i class="icofont-star"></i> -->
+                <a >({{DetailsProduct?.Rate}} reviews)</a>
+              </div>
+              <h3
+                  class="view-price"><del>${{DetailsProduct?.price?.old}}</del><span>${{DetailsProduct?.price?.new}}<small>/per kilo</small></span></h3>
+                  <p class="view-desc">{{DetailsProduct?.discription}}</p>
+                  <div class="view-list-group"><label class="view-list-title">tags:</label>
+                      <ul class="view-tag-list">
+                          <li *ngFor="let tag of DetailsProduct?.tags"><a href="#">{{tag?.TageName}}</a></li>
+
+                      </ul>
+                  </div>
+                  <div class="view-list-group"><label class="view-list-title">Share:</label>
+                      <ul class="view-share-list">
+                          <li><a href="#" class="icofont-facebook" title="Facebook"></a></li>
+                          <li><a href="#" class="icofont-twitter" title="Twitter"></a></li>
+                          <li><a href="#" class="icofont-linkedin" title="Linkedin"></a></li>
+                          <li><a href="#" class="icofont-instagram" title="Instagram"></a></li>
+                      </ul>
+                  </div>
+                  <div class="view-add-group"><button class="product-add" title="Add to Cart"><i class="fas fa-shopping-basket"></i><span>add to cart</span></button>
+
+                  </div>
+                  <div class="view-action-group">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <a class="view-wish wish" href="#" title="Add Your Wishlist">
+                          <i class="icofont-heart"></i><span>add to wish</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <a class="view-compare" href="compare.html" title="Compare This Item">
+                          <i class="fas fa-random"></i><span>Compare This</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+      </div>
+  </div>
+
+
+
+</div>

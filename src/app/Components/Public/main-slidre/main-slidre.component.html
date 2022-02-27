@@ -1,0 +1,35 @@
+
+<ngx-slick-carousel class="carousel home-index-slider slider-arrow slider-dots " #slickModal="slick-carousel"
+[config]="slideConfig">
+  <div ngxSlickItem *ngFor="let slide of slides" class="slide banner-part ">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 col-lg-6">
+                  <div class="banner-content">
+                      <h1>{{slide.title}}</h1>
+                      <p>{{slide.discription}}</p>
+                      <div class="banner-btn">
+                        <a class="btn btn-inline mr-3" ><i class="fas fa-shopping-basket"></i><span>shop now</span></a>
+                        <a class="btn btn-outline"><i class="icofont-sale-discount"></i><span>get offer</span></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                  <div class="banner-img"><img [src]="slide.img" alt="index"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</ngx-slick-carousel>
+
+
+
+
+
+<!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel"
+[config]="slideConfig" >
+<div ngxSlickItem *ngFor="let slide of slides" class="slide">
+<img src="{{ slide.img }}" alt="" width="100%">
+</div>
+</ngx-slick-carousel> -->

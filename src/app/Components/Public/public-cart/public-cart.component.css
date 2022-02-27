@@ -1,0 +1,556 @@
+.single-banner {
+  background-size: cover !important;
+  padding: 100px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1
+}
+
+.single-banner::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(6, 23, 56, 0.6)), to(rgba(17, 151, 68, 0.6)));
+  background: linear-gradient(to left, rgba(6, 23, 56, 0.6), rgba(17, 151, 68, 0.6));
+  z-index: -1
+}
+
+.single-banner h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  color: var(--white);
+  text-transform: uppercase
+}
+
+@media (max-width: 767px) {
+  .single-banner {
+      padding: 60px 0px
+  }
+  .single-banner h2 {
+      font-size: 32px;
+      margin-bottom: 12px
+  }
+}
+.alert-info {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 20px;
+  border-radius: 3px;
+  background: var(--white);
+  border-top: 3px solid var(--primary);
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08)
+}
+
+.alert-info p {
+  font-weight: 500;
+  color: var(--primary);
+  text-shadow: var(--primary-shadow)
+}
+
+.alert-info p a {
+  margin-left: 5px;
+  text-decoration: underline
+}
+
+.account-card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 0px 30px 30px;
+  background: var(--white)
+}
+
+.account-title {
+  padding: 18px 0px;
+  margin-bottom: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border)
+}
+
+.account-title::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0px;
+  width: 50px;
+  height: 2px;
+  background: var(--primary)
+}
+
+.account-title h4 {
+  text-transform: capitalize
+}
+
+.account-title button,
+.account-title a {
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+  padding: 5px 15px;
+  white-space: nowrap;
+  text-transform: capitalize;
+  color: var(--primary);
+  background: var(--green-chalk);
+  text-shadow: var(--primary-tshadow);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.account-title button:hover,
+.account-title a:hover {
+  color: var(--white);
+  background: var(--primary)
+}
+
+@media (max-width: 575px) {
+  .account-card {
+      padding: 0px 15px 15px
+  }
+}
+thead tr {
+  background: var(--primary);
+}
+
+thead tr th {
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  color: var(--white);
+  border-right: 1px solid var(--border);
+}
+thead tr th:first-child {
+  border-radius: 6px 0px 0px 6px;
+}
+thead tr th:last-child {
+  border-right: none;
+  border-radius: 0px 6px 6px 0px;
+}
+tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+tbody tr td {
+  padding: 12px 20px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+
+.table-list {
+  width: 100%
+}
+
+thead tr {
+  background: var(--primary)
+}
+
+thead tr th {
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  color: var(--white);
+  border-right: 1px solid var(--border)
+}
+
+thead tr th:first-child {
+  border-radius: 6px 0px 0px 6px
+}
+
+thead tr th:last-child {
+  border-right: none;
+  border-radius: 0px 6px 6px 0px
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--border)
+}
+
+tbody tr td {
+  padding: 12px 20px;
+  text-align: center;
+  border-right: 1px solid var(--border)
+}
+
+tbody tr td:last-child {
+  border-right: none
+}
+
+.table-name {
+  white-space: nowrap;
+  text-transform: capitalize
+}
+
+.table-image img {
+  width: auto;
+  height: 100px
+}
+
+.table-price h6 {
+  white-space: nowrap
+}
+
+.table-price h6 small {
+  font-size: 13px;
+  margin-left: 3px;
+  color: var(--gray);
+  font-family: sans-serif
+}
+
+.table-desc p {
+  width: 150px;
+  font-size: 15px;
+  text-align: left
+}
+
+.table-desc p a {
+  text-transform: capitalize
+}
+
+.table-desc p a:hover {
+  text-decoration: underline
+}
+
+.table-vendor a {
+  font-weight: 500;
+  color: var(--heading);
+  text-transform: capitalize;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.table-vendor a:hover {
+  color: var(--primary)
+}
+
+.table-status h6 {
+  text-transform: capitalize
+}
+
+.table-status .stock-in {
+  color: var(--purple)
+}
+
+.table-status .stock-out {
+  color: var(--orange)
+}
+
+.table-shop {
+  width: 180px
+}
+
+.table-shop .product-add {
+  color: var(--white);
+  background: var(--primary)
+}
+
+.table-shop .action-plus i,
+.table-shop .action-minus i {
+  background: var(--white)
+}
+
+.table-action a i {
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 3px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.table-action .view i {
+  color: var(--green);
+  background: var(--white)
+}
+
+.table-action .view i:hover {
+  color: var(--white);
+  background: var(--green)
+}
+
+.table-action .wish i {
+  color: var(--green);
+  background: var(--white)
+}
+
+.table-action .wish.active i {
+  color: var(--white);
+  background: var(--green)
+}
+
+.table-action .trash i {
+  color: var(--red);
+  background: var(--white)
+}
+
+.table-action .trash i:hover {
+  color: var(--white);
+  background: var(--red)
+}
+
+@media (max-width: 1199px) {
+  .table-scroll {
+      overflow-x: scroll
+  }
+}
+
+
+
+.chekout-coupon {
+  width: 600px;
+  margin: 45px auto 5px;
+  text-align: center
+}
+
+.checkout-charge {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.checkout-charge ul {
+  border-top: 3px solid var(--primary)
+}
+
+.checkout-charge ul li {
+  padding: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border)
+}
+
+.checkout-charge ul li:last-child {
+  border-bottom: none
+}
+
+.checkout-charge ul li:last-child span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary)
+}
+
+.checkout-charge ul li span {
+  font-weight: 500;
+  color: var(--heading);
+  text-transform: capitalize
+}
+
+.checkout-charge ul li span small {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 3px
+}
+
+.checkout-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+  margin-top: 50px
+}
+
+.checkout-check input {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-top: 4px;
+  cursor: pointer
+}
+
+.checkout-check label {
+  line-height: 22px
+}
+
+.checkout-check label a {
+  color: var(--primary)
+}
+
+.checkout-check label a:hover {
+  text-decoration: underline
+}
+
+.checkout-proced .btn {
+  width: 100%
+}
+
+.table-action .view i,
+.table-action .trash i {
+  background: var(--chalk)
+}
+
+@media (max-width: 767px) {
+  .chekout-coupon,
+  .checkout-charge {
+      width: 100%
+  }
+  .checkout-check {
+      margin-top: 15px
+  }
+}
+
+
+
+
+
+
+.product-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+}
+
+.product-action button i {
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+  line-height: 35px;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+  color: var(--text);
+  background: var(--chalk);
+  text-shadow: var(--primary-tshadow);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s
+}
+
+.product-action button i:hover {
+  color: var(--white);
+  background: var(--primary)
+}
+
+.product-action input {
+  width: 80px;
+  font-size: 15px;
+  margin: 0px 5px;
+  padding: 6px 0px;
+  border-radius: 6px;
+  text-align: center;
+  color: var(--white);
+  background: var(--primary);
+  text-shadow: var(--primary-tshadow)
+}
+
+
+
+
+
+.CartEmpty{
+  background: #fff;
+  text-align: center;
+  height: 350px;
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #cbcbcb;
+}
+.CartEmpty .imgCart{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.CartEmpty .imgCart img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.CartEmpty h4{
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+.CartEmpty h6{
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.CartEmpty .product-add{
+  width: 100%;
+  font-size: 15px;
+  padding: 6px 0px;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--heading);
+  background: var(--border);
+  text-shadow: var(-primary-tshadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+.CartEmpty .product-add:hover{
+  color: var(--white);
+    background: var(--primary);
+}

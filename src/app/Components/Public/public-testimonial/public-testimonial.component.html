@@ -1,0 +1,58 @@
+
+
+    <section class="inner-section about-testimonial">
+      <div class="container">
+
+        <ngx-slick-carousel class="carousel home-index-slider slider-arrow slider-dots " #slickModal="slick-carousel"
+        [config]="slideConfig">
+
+          <div ngxSlickItem  class="slide testi-slider slider-arrow ">
+            <div class="testi-content"><a class="testi-img" href="#"><img src="../../../../assets/images/testimonial/01.jpg" alt="testimonial"></a>
+              <div class="testi-quote"><i class="icofont-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit neque earum sapiente vitae obcaecati magnam doloribus magni provident ab ipsam sint dolores repellat inventore sequi temporibus natus.</p>
+                  <h4>tahmina labonno</h4>
+                  <h6>Former MD - joomtech.com</h6>
+              </div>
+            </div>
+          </div>
+
+          <div ngxSlickItem  class="slide testi-slider slider-arrow ">
+            <div class="testi-content"><a class="testi-img" href="#"><img src="../../../../assets/images/testimonial/02.jpg" alt="testimonial"></a>
+              <div class="testi-quote"><i class="icofont-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit neque earum sapiente vitae obcaecati magnam doloribus magni provident ab ipsam sint dolores repellat inventore sequi temporibus natus.</p>
+                  <h4>tahmina labonno</h4>
+                  <h6>Former MD - joomtech.com</h6>
+              </div>
+            </div>
+          </div>
+
+        </ngx-slick-carousel>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="section Category-part">
+  <div class="container">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let CategoItem of category">
+          <div class="CatItem">
+            <a [routerLink]="['Category',CategoItem.categoryID]" class="suggest-card">
+              <img [src]="CategoItem.img" alt="suggest">
+              <h5>{{CategoItem.name}} <span>{{CategoItem.Item}} items</span></h5>
+            </a>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+  </div>
+</section> -->

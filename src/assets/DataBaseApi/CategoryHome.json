@@ -1,0 +1,50 @@
+[
+  {
+    "categoryID":1,
+    "name": "vegetables",
+    "Item": 34,
+    "img": "/assets/images/suggest/01.jpg"
+  },
+  {
+    "categoryID":2,
+    "name": "fruits",
+    "Item": 89,
+    "img": "/assets/images/suggest/02.jpg"
+  },
+  {
+    "categoryID":3,
+    "name": "groceries",
+    "Item": 45,
+    "img": "/assets/images/suggest/03.jpg"
+  },
+  {
+    "categoryID":4,
+    "name": "dairy farm",
+    "Item": 83,
+    "img": "/assets/images/suggest/04.jpg"
+  },
+  {
+    "categoryID":5,
+    "name": "sea foods",
+    "Item": 40,
+    "img": "/assets/images/suggest/05.jpg"
+  },
+  {
+    "categoryID":6,
+    "name": "vegan foods",
+    "Item": 57,
+    "img": "/assets/images/suggest/06.jpg"
+  },
+  {
+    "categoryID":7,
+    "name": "dry foods",
+    "Item": 23,
+    "img": "/assets/images/suggest/07.jpg"
+  },
+  {
+    "categoryID":8,
+    "name": "fast foods",
+    "Item": 97,
+    "img": "/assets/images/suggest/08.jpg"
+  }
+]

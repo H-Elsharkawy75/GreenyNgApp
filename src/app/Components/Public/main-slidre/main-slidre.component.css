@@ -1,0 +1,30 @@
+
+
+
+
+/* .banner-1 {
+
+}
+
+.banner-2 {
+
+} */
+.banner-content p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.slide:nth-child(even){
+  background: -webkit-gradient(linear, left top, right top, from(#45f76354), to(#ffc3d024));
+  background: linear-gradient(to right, #45f76354, #ffc3d024);
+  direction: rtl;
+}
+.slide:nth-child(even) .banner-content{
+  direction: ltr;
+}
+
+.slide:nth-child(odd){
+  background: -webkit-gradient(linear, right top, left top, from(#45f76354), to(#ffc3d024));
+  background: linear-gradient(to left, #45f76354, #ffc3d024)
+}

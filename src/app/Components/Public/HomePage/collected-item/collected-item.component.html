@@ -1,0 +1,425 @@
+<section class="section recent-part CollectedItem">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-heading">
+                <h2>Collected New Items</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide >
+            <div class="product-card">
+                <div class="product-media">
+                    <div class="product-label">
+                      <label class="label-text sale">sale</label>
+                      <label class="label-text new">new</label>
+                    </div>
+                    <button class="product-wish wish"><i class="fas fa-heart"></i></button>
+                    <a class="product-image" href="product-video.html">
+                      <img src="../../../../../assets/images/product/01.jpg" alt="product">
+                    </a>
+                    <div
+                        class="product-widget">
+                        <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
+                        <!-- <a title="Product Video" href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true" data-vbtype="video"></a> -->
+                        <!-- <a class="venobox " (click)="openLg(content)"><i class="fas fa-play"></i></a> -->
+                        <a type="button" class="venobox" data-toggle="modal" data-target=".ModalYoutupeLink">
+                          <i class="fas fa-play"></i>
+                        </a>
+                        <!-- <a title="Product View" type="button" class="" data-bs-toggle="modal" data-bs-target=".ProductPriview"></a> -->
+                        <a type="button" class="venobox" data-toggle="modal" data-target=".ProductPriview">
+                          <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+
+
+                  </div>
+                  <div class="product-content">
+                      <div class="product-rating">
+                        <i class="active icofont-star"></i>
+                        <i class="active icofont-star"></i>
+                        <i class="active icofont-star"></i>
+                        <i class="active icofont-star"></i>
+                        <i class="icofont-star"></i>
+                        <a href="product-video.html">(3)</a>
+                      </div>
+                      <h6 class="product-name">
+                        <a href="product-video.html">fresh green chilis</a>
+                      </h6>
+                      <h6 class="product-price">
+                        <del>$34</del>
+                        <span>$28<small>/piece</small></span>
+                      </h6>
+                      <button class="product-add" title="Add to Cart">
+                        <i class="fas fa-shopping-basket"></i><span>add</span>
+                      </button>
+                  </div>
+                  <!-- Modal Vedio Youtube -->
+                  <div class="modal fade bd-example-modal-lg ModalYoutupeLink "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="modal-body">
+                          <div class="ProductIframe">
+                            <iframe src="https://www.youtube.com/embed/9xzcVxSBbG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal View Details -->
+                  <div class="modal fade bd-example-modal-xl ProductPriview "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                            <app-product-view-popup></app-product-view-popup>
+                        </div>
+                    </div>
+                  </div>
+
+
+            </div>
+        </ng-template>
+
+        <ng-template carouselSlide >
+          <div class="product-card">
+              <div class="product-media">
+                  <div class="product-label">
+                    <label class="label-text sale">sale</label>
+                    <label class="label-text new">new</label>
+                  </div>
+                  <button class="product-wish wish"><i class="fas fa-heart"></i></button>
+                  <a class="product-image" href="product-video.html">
+                    <img src="../../../../../assets/images/product/01.jpg" alt="product">
+                  </a>
+                  <div
+                      class="product-widget">
+                      <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
+                      <!-- <a title="Product Video" href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true" data-vbtype="video"></a> -->
+                      <!-- <a class="venobox " (click)="openLg(content)"><i class="fas fa-play"></i></a> -->
+                      <a type="button" class="venobox" data-toggle="modal" data-target=".ModalYoutupeLink">
+                        <i class="fas fa-play"></i>
+                      </a>
+                      <!-- <a title="Product View" type="button" class="" data-bs-toggle="modal" data-bs-target=".ProductPriview"></a> -->
+                      <a type="button" class="venobox" data-toggle="modal" data-target=".ProductPriview">
+                        <i class="fas fa-eye"></i>
+                      </a>
+                  </div>
+
+
+                </div>
+                <div class="product-content">
+                    <div class="product-rating">
+                      <i class="active icofont-star"></i>
+                      <i class="active icofont-star"></i>
+                      <i class="active icofont-star"></i>
+                      <i class="active icofont-star"></i>
+                      <i class="icofont-star"></i>
+                      <a href="product-video.html">(3)</a>
+                    </div>
+                    <h6 class="product-name">
+                      <a href="product-video.html">fresh green chilis</a>
+                    </h6>
+                    <h6 class="product-price">
+                      <del>$34</del>
+                      <span>$28<small>/piece</small></span>
+                    </h6>
+                    <button class="product-add" title="Add to Cart">
+                      <i class="fas fa-shopping-basket"></i><span>add</span>
+                    </button>
+                </div>
+                <!-- Modal Vedio Youtube -->
+                <div class="modal fade bd-example-modal-lg ModalYoutupeLink "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="modal-body">
+                        <div class="ProductIframe">
+                          <iframe src="https://www.youtube.com/embed/9xzcVxSBbG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal View Details -->
+                <div class="modal fade bd-example-modal-xl ProductPriview "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                          <app-product-view-popup></app-product-view-popup>
+                      </div>
+                  </div>
+                </div>
+
+
+          </div>
+      </ng-template>
+
+      <ng-template carouselSlide >
+        <div class="product-card">
+            <div class="product-media">
+                <div class="product-label">
+                  <label class="label-text sale">sale</label>
+                  <label class="label-text new">new</label>
+                </div>
+                <button class="product-wish wish"><i class="fas fa-heart"></i></button>
+                <a class="product-image" href="product-video.html">
+                  <img src="../../../../../assets/images/product/01.jpg" alt="product">
+                </a>
+                <div
+                    class="product-widget">
+                    <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
+                    <!-- <a title="Product Video" href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true" data-vbtype="video"></a> -->
+                    <!-- <a class="venobox " (click)="openLg(content)"><i class="fas fa-play"></i></a> -->
+                    <a type="button" class="venobox" data-toggle="modal" data-target=".ModalYoutupeLink">
+                      <i class="fas fa-play"></i>
+                    </a>
+                    <!-- <a title="Product View" type="button" class="" data-bs-toggle="modal" data-bs-target=".ProductPriview"></a> -->
+                    <a type="button" class="venobox" data-toggle="modal" data-target=".ProductPriview">
+                      <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+
+
+              </div>
+              <div class="product-content">
+                  <div class="product-rating">
+                    <i class="active icofont-star"></i>
+                    <i class="active icofont-star"></i>
+                    <i class="active icofont-star"></i>
+                    <i class="active icofont-star"></i>
+                    <i class="icofont-star"></i>
+                    <a href="product-video.html">(3)</a>
+                  </div>
+                  <h6 class="product-name">
+                    <a href="product-video.html">fresh green chilis</a>
+                  </h6>
+                  <h6 class="product-price">
+                    <del>$34</del>
+                    <span>$28<small>/piece</small></span>
+                  </h6>
+                  <button class="product-add" title="Add to Cart">
+                    <i class="fas fa-shopping-basket"></i><span>add</span>
+                  </button>
+              </div>
+              <!-- Modal Vedio Youtube -->
+              <div class="modal fade bd-example-modal-lg ModalYoutupeLink "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                      <div class="ProductIframe">
+                        <iframe src="https://www.youtube.com/embed/9xzcVxSBbG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal View Details -->
+              <div class="modal fade bd-example-modal-xl ProductPriview "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                        <app-product-view-popup></app-product-view-popup>
+                    </div>
+                </div>
+              </div>
+
+
+        </div>
+    </ng-template>
+
+    <ng-template carouselSlide >
+      <div class="product-card">
+          <div class="product-media">
+              <div class="product-label">
+                <label class="label-text sale">sale</label>
+                <label class="label-text new">new</label>
+              </div>
+              <button class="product-wish wish"><i class="fas fa-heart"></i></button>
+              <a class="product-image" href="product-video.html">
+                <img src="../../../../../assets/images/product/01.jpg" alt="product">
+              </a>
+              <div
+                  class="product-widget">
+                  <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
+                  <!-- <a title="Product Video" href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true" data-vbtype="video"></a> -->
+                  <!-- <a class="venobox " (click)="openLg(content)"><i class="fas fa-play"></i></a> -->
+                  <a type="button" class="venobox" data-toggle="modal" data-target=".ModalYoutupeLink">
+                    <i class="fas fa-play"></i>
+                  </a>
+                  <!-- <a title="Product View" type="button" class="" data-bs-toggle="modal" data-bs-target=".ProductPriview"></a> -->
+                  <a type="button" class="venobox" data-toggle="modal" data-target=".ProductPriview">
+                    <i class="fas fa-eye"></i>
+                  </a>
+              </div>
+
+
+            </div>
+            <div class="product-content">
+                <div class="product-rating">
+                  <i class="active icofont-star"></i>
+                  <i class="active icofont-star"></i>
+                  <i class="active icofont-star"></i>
+                  <i class="active icofont-star"></i>
+                  <i class="icofont-star"></i>
+                  <a href="product-video.html">(3)</a>
+                </div>
+                <h6 class="product-name">
+                  <a href="product-video.html">fresh green chilis</a>
+                </h6>
+                <h6 class="product-price">
+                  <del>$34</del>
+                  <span>$28<small>/piece</small></span>
+                </h6>
+                <button class="product-add" title="Add to Cart">
+                  <i class="fas fa-shopping-basket"></i><span>add</span>
+                </button>
+            </div>
+            <!-- Modal Vedio Youtube -->
+            <div class="modal fade bd-example-modal-lg ModalYoutupeLink "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="modal-body">
+                    <div class="ProductIframe">
+                      <iframe src="https://www.youtube.com/embed/9xzcVxSBbG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal View Details -->
+            <div class="modal fade bd-example-modal-xl ProductPriview "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                      <app-product-view-popup></app-product-view-popup>
+                  </div>
+              </div>
+            </div>
+
+
+      </div>
+  </ng-template>
+
+  <ng-template carouselSlide >
+    <div class="product-card">
+        <div class="product-media">
+            <div class="product-label">
+              <label class="label-text sale">sale</label>
+              <label class="label-text new">new</label>
+            </div>
+            <button class="product-wish wish"><i class="fas fa-heart"></i></button>
+            <a class="product-image" href="product-video.html">
+              <img src="../../../../../assets/images/product/01.jpg" alt="product">
+            </a>
+            <div
+                class="product-widget">
+                <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
+                <!-- <a title="Product Video" href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true" data-vbtype="video"></a> -->
+                <!-- <a class="venobox " (click)="openLg(content)"><i class="fas fa-play"></i></a> -->
+                <a type="button" class="venobox" data-toggle="modal" data-target=".ModalYoutupeLink">
+                  <i class="fas fa-play"></i>
+                </a>
+                <!-- <a title="Product View" type="button" class="" data-bs-toggle="modal" data-bs-target=".ProductPriview"></a> -->
+                <a type="button" class="venobox" data-toggle="modal" data-target=".ProductPriview">
+                  <i class="fas fa-eye"></i>
+                </a>
+            </div>
+
+
+          </div>
+          <div class="product-content">
+              <div class="product-rating">
+                <i class="active icofont-star"></i>
+                <i class="active icofont-star"></i>
+                <i class="active icofont-star"></i>
+                <i class="active icofont-star"></i>
+                <i class="icofont-star"></i>
+                <a href="product-video.html">(3)</a>
+              </div>
+              <h6 class="product-name">
+                <a href="product-video.html">fresh green chilis</a>
+              </h6>
+              <h6 class="product-price">
+                <del>$34</del>
+                <span>$28<small>/piece</small></span>
+              </h6>
+              <button class="product-add" title="Add to Cart">
+                <i class="fas fa-shopping-basket"></i><span>add</span>
+              </button>
+          </div>
+          <!-- Modal Vedio Youtube -->
+          <div class="modal fade bd-example-modal-lg ModalYoutupeLink "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                  <div class="ProductIframe">
+                    <iframe src="https://www.youtube.com/embed/9xzcVxSBbG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal View Details -->
+          <div class="modal fade bd-example-modal-xl ProductPriview "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    <app-product-view-popup></app-product-view-popup>
+                </div>
+            </div>
+          </div>
+
+
+    </div>
+</ng-template>
+
+
+      </owl-carousel-o>
+
+
+
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-btn-25"><a href="shop-4column.html" class="btn btn-outline"><i class="fas fa-eye"></i><span>show more</span></a></div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+

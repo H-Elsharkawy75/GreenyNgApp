@@ -1,0 +1,73 @@
+.single-banner {
+  padding: 100px 0px 180px
+}
+
+.brand-single {
+  position: relative;
+  text-align: center;
+  margin-top: -120px;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.brand-single a {
+  display: block
+}
+
+.brand-single a img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid var(--body);
+  margin-bottom: 10px
+}
+
+.brand-single a h3 {
+  text-transform: capitalize;
+  margin-bottom: 3px
+}
+
+.brand-single ul {
+  margin-bottom: 3px
+}
+
+.brand-single ul li {
+  font-size: 13px;
+  margin: 0px 1px;
+  color: var(--gray);
+  display: inline-block
+}
+
+.brand-single ul .active {
+  color: var(--yellow)
+}
+
+.brand-single ul .total {
+  color: var(--heading)
+}
+
+.BrandRate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.star {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0px 2px;
+  color: #d3d3d3;
+  content: "\f000";
+}
+.full {
+  color: #ffab10;
+}
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: #ffab10;
+}
+
+

@@ -1,0 +1,132 @@
+
+    <section class="inner-section single-banner" style="background: url(../../../../assets/images/single-banner.jpg) no-repeat center;">
+      <div class="container">
+          <h2>Product</h2>
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Product</li>
+          </ol>
+      </div>
+  </section>
+  <section class="inner-section shop-part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="top-filter">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="filter-short">
+                        <label class="filter-label">Short by :</label>
+                        <select class="form-select filter-select">
+                          <option selected>default</option>
+                          <option value="3">trending</option>
+                          <option value="1">featured</option>
+                          <option value="2">recommend</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="SearchForm">
+                        <form #SearchForm="ngForm" (ngSubmit)="onSubmit()">
+                          <div class="form-group">
+                            <input [(ngModel)]="SearchWord" name="Search" type="text" class="form-control" placeholder="Search Product">
+                            <button class="Search_Btn">Search</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <ng-container *ngFor="let Product of Products | filter:SearchWord:'name' | paginate: { itemsPerPage: 12, totalItems:totalLenght ,currentPage: page }">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-card">
+              <div class="product-media">
+                  <div class="product-label">
+                    <label class="label-text sale" *ngIf="Product.sales">sale</label>
+                    <label class="label-text new" *ngIf="Product.New">new</label>
+                  </div>
+                  <button class="product-wish wish">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <a class="product-image" [routerLink]="['/Products', Product.ProductId]">
+                    <img [src]="Product.mainimg" alt="product">
+                  </a>
+                  <div class="product-widget">
+                    <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
+                    <a type="button" class="venobox" placement="top" ngbTooltip="Preview" (click)="PrivewDetails(Product.ProductId)" data-toggle="modal" data-target=".ProductPriview">
+                      <i class="fas fa-eye"></i>
+                    </a>
+                  </div>
+              </div>
+              <div class="product-content">
+                <div class="product-rating">
+                  <ng-template #rate let-fill="fill">
+                    <span class="star icofont-star" [class.full]="fill === 100"></span>
+                  </ng-template>
+                  <ngb-rating [(rate)]="Product.Rate" [starTemplate]="rate" [readonly]="true" [max]="5"></ngb-rating>
+                  <a >({{Product.Rate}})</a>
+                </div>
+                  <h6 class="product-name">
+                    <a [routerLink]="['/Products', Product.ProductId]">{{Product.name}}</a>
+                  </h6>
+                  <h6 class="product-price">
+                    <del>${{Product.price.old}}</del>
+                    <span>${{Product.price.new}}<small>/piece</small></span>
+                  </h6>
+                  <button class="product-add" placement="bottom" ngbTooltip="Add To Cart" (click)="AddToCart(Product)" >
+                    <i class="fas fa-shopping-basket"></i><span>add</span>
+                  </button>
+              </div>
+
+
+                              <!-- Modal View Details -->
+                              <div class="modal fade bd-example-modal-xl ProductPriview "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        <app-product-view-popup [DetailsProduct]="ProductDetails"></app-product-view-popup>
+                                    </div>
+                                </div>
+                              </div>
+
+
+
+          </div>
+      </div>
+      </ng-container>
+
+
+    </div>
+    <div class="row">
+
+
+        <div class="col-lg-12">
+          <pagination-controls class="bottom-paginate" [responsive]="true" previousLabel="" screenReaderPageLabel="" nextLabel="" (pageChange)="page = $event"></pagination-controls>
+          <!--
+            <pagination-controls [id]="config.id"
+              [maxSize]="maxSize"
+              [directionLinks]="directionLinks"
+              [autoHide]="autoHide"
+              [responsive]="responsive"
+              [previousLabel]="labels.previousLabel"
+              [nextLabel]="labels.nextLabel"
+              [screenReaderPaginationLabel]="labels.screenReaderPaginationLabel"
+              [screenReaderPageLabel]="labels.screenReaderPageLabel"
+              [screenReaderCurrentLabel]="labels.screenReaderCurrentLabel"
+              (pageChange)="onPageChange($event)"
+              (pageBoundsCorrection)="onPageBoundsCorrection($event)">
+            </pagination-controls>
+          -->
+
+        </div>
+    </div>
+    </div>
+</section>
+

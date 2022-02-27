@@ -1,0 +1,21 @@
+
+
+
+
+
+  <section class="section Category-part">
+    <div class="container">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide *ngFor="let CategoItem of category">
+            <div class="CatItem">
+              <a [routerLink]="['Category',CategoItem.categoryID]" class="suggest-card">
+                <img [src]="CategoItem.img" alt="suggest">
+                <h5>{{CategoItem.name}} <span>{{CategoItem.Item}} items</span></h5>
+              </a>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+    </div>
+</section>
+
+

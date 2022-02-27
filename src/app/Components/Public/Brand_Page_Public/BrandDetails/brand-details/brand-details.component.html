@@ -1,0 +1,98 @@
+<section class="single-banner" style="background: url(../../../../../../assets/images/single-banner.jpg) no-repeat center;">
+  <div class="container">
+      <h2>{{BrandDetails.BrandName}}</h2>
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+          <li class="breadcrumb-item"><a routerLink="/Brands">Brands</a></li>
+          <!-- <li class="breadcrumb-item active" aria-current="page">{{BrandDetails.BrandName}}</li> -->
+      </ol>
+  </div>
+</section>
+<div class="brand-single">
+
+  <a >
+    <img [src]="BrandDetails.BrandImg" alt="brand">
+  </a>
+  <!-- <p>({{BrandDetails.BrandItem}} items)</p> -->
+  <p>({{FilterProductsLenght}} items)</p>
+  <!-- <a>
+      <h3>{{BrandDetails.BrandName}}</h3>
+  </a> -->
+  <div class="BrandRate">
+    <ng-template #rate let-fill="fill">
+      <span class="star icofont-star" [class.full]="fill === 100"></span>
+    </ng-template>
+    <ngb-rating [rate]="BrandDetails.BrandRate" [starTemplate]="rate" [readonly]="true" [max]="5"></ngb-rating>
+    <a >({{BrandDetails.BrandRate}})</a>
+  </div>
+
+
+</div>
+
+
+<section class="inner-section shop-part">
+  <div class="container">
+      <div class="row ">
+        <ng-container *ngFor="let Product of BrandProducts">
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+            <div class="product-card">
+                <div class="product-media">
+                    <div class="product-label">
+                      <label class="label-text sale" *ngIf="Product.sales">sale</label>
+                      <label class="label-text new" *ngIf="Product.New">new</label>
+                    </div>
+                    <button class="product-wish wish">
+                      <i class="fas fa-heart"> </i>
+                    </button>
+                    <a class="product-image" [routerLink]="['/Products',Product.ProductId ]">
+                      <img [src]="Product.mainimg" alt="product">
+                    </a>
+                    <div class="product-widget">
+                      <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
+                      <a type="button" class="venobox" placement="top" ngbTooltip="Preview" (click)="PrivewDetails(Product.ProductId)" data-toggle="modal" data-target=".ProductPriview">
+                        <i class="fas fa-eye"></i>
+                      </a>
+                    </div>
+            </div>
+            <div class="product-content">
+              <div class="product-rating">
+                <ng-template #rate let-fill="fill">
+                  <span class="star icofont-star" [class.full]="fill === 100"></span>
+                </ng-template>
+                <ngb-rating [rate]="Product.Rate" [starTemplate]="rate" [readonly]="true" [max]="5"></ngb-rating>
+                <a >({{Product?.Rate}})</a>
+              </div>
+                <h6 class="product-name">
+                  <a [routerLink]="['/Products',Product.ProductId ]">{{Product.name}}</a>
+                </h6>
+                <h6 class="product-price">
+                  <del>${{Product.price.old}}</del>
+                  <span>${{Product.price.new}}<small>/piece</small></span>
+                </h6>
+                <button class="product-add" title="Add to Cart" (click)="AddtoCart(Product)">
+                  <i class="fas fa-shopping-basket"></i><span>add</span>
+                </button>
+            </div>
+
+            <!-- Modal View Details -->
+            <div class="modal fade bd-example-modal-xl ProductPriview "  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                      <app-product-view-popup [DetailsProduct]="ProductDetails"></app-product-view-popup>
+                  </div>
+              </div>
+            </div>
+
+
+        </div>
+    </div>
+        </ng-container>
+
+    </div>
+  </div>
+</section>
+

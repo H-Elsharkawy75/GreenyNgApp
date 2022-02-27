@@ -1,0 +1,109 @@
+<section class="inner-section single-banner" style="background: url(../../../../assets/images/single-banner.jpg) no-repeat center;">
+  <div class="container">
+      <h2>checkout</h2>
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+          <li class="breadcrumb-item"><a routerLink="">shop grid</a></li>
+          <li class="breadcrumb-item active" aria-current="page">checkout</li>
+      </ol>
+  </div>
+</section>
+<section class="inner-section checkout-part">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12" style="display: none;">
+              <div class="alert-info">
+                  <p>Returning customer? <a routerLink="/Account">Click here to login</a></p>
+              </div>
+          </div>
+
+          <div class="col-lg-12" *ngIf="CartProduct.length == 0">
+            <div class="CartEmpty">
+              <div class="flexdiv">
+                <div class="imgCart">
+                  <img src="../../../../assets/images/favicon.png">
+                </div>
+                <h4>Your cart is empty! </h4>
+                <h6>Add item to it now</h6>
+                <button routerLink="/Products" class="product-add">Shop Now</button>
+              </div>
+
+            </div>
+        </div>
+          <div class="col-lg-12" *ngIf="CartProduct.length !== 0">
+              <div class="account-card">
+                  <div class="account-title">
+                      <h4>Your order</h4>
+                  </div>
+                  <div class="account-content">
+                      <div class="table-scroll">
+                          <table class="table-list">
+                              <thead>
+                                  <tr>
+                                      <th scope="col">Serial</th>
+                                      <th scope="col">Product</th>
+                                      <th scope="col">Name</th>
+                                      <th scope="col">Price</th>
+                                      <th scope="col">quantity</th>
+                                      <th scope="col">Total</th>
+                                      <th scope="col">action</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+
+                                  <tr *ngFor="let item of CartProduct; let i = index">
+                                    <td class="table-serial">
+                                        <h6>{{i+1}}</h6>
+                                    </td>
+                                    <td class="table-image"><img [src]="item.mainimg" alt="product"></td>
+                                    <td class="table-name">
+                                        <h6>{{item.name}}</h6>
+                                    </td>
+                                    <td class="table-price">
+                                        <h6>$ {{item.price.new}}<small>/kilo</small></h6>
+                                    </td>
+                                    <td class="table-quantity">
+                                      <div class="product-action">
+                                        <button class="action-minus" (click)=" Decrease()  " title="Quantity Minus">
+                                          <i class="icofont-minus"></i>
+                                        </button>
+                                          <input  readonly class="action-input" title="Quantity Number" type="text"  name="quantity" [value]="quantity" >
+                                        <button class="action-plus" (click)="increment()" title="Quantity Plus">
+                                          <i class="icofont-plus"></i>
+                                        </button>
+                                      </div>
+                                    </td>
+                                    <td class="table-price">
+                                      <h6>$ {{item.price.new * quantity}}</h6>
+                                  </td>
+                                    <td class="table-action">
+                                      <a class="view" [routerLink]="['/Products', item.ProductId]" title="Quick View"><i class="fas fa-eye"></i></a>
+                                      <a class="trash" (click)="DeletItem(item, i)"title="Remove Wishlist"><i class="icofont-trash"></i></a></td>
+                                </tr>
+
+                                <tr>
+
+                                  <td><button (click)="RemoveItems()" class="product-add bg-danger" style="color: var(--white);">remove Car</button></td>
+                                  <td><button routerLink="/Products" class="product-add bg-primary" style="color: var(--white);">Shop More</button></td>
+                                  <td><button class="product-add bg-success" style="color: var(--white);">Check out</button></td>
+                                  <td colspan="4"><h4>Total: <span class="text-success">{{grandTota}}</span></h4></td>
+                                </tr>
+
+                              </tbody>
+                          </table>
+                      </div>
+                      <div class="checkout-charge">
+                          <ul>
+                              <li><span>Sub total</span><span>$267.45</span></li>
+                              <li><span>delivery fee</span><span>$10.00</span></li>
+                              <li><span>discount</span><span>$00.00</span></li>
+                              <li><span>Total<small>(Incl. VAT)</small></span><span>$277.00</span></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
